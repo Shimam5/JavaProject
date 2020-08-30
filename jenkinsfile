@@ -1,0 +1,30 @@
+pipeline{
+	agent any
+	stages{
+		stage('SCM CheckOut'){
+			steps{
+				echo "Download the code from git"
+			}			
+		}
+		stage('Compile'){
+			steps{
+				bat 'mvn clean compile'
+			}
+		}
+		stage('Test'){
+			steps{
+				bat 'mvn test'
+			}
+		}
+		steps('Build'){
+			steps{
+				bat 'mvn install'
+			}
+		}
+		steps('Deploy'){
+			steps{
+				echo "Deploy into the maven repo"
+			}
+		}
+	}	
+}
