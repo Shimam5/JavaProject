@@ -16,12 +16,12 @@ pipeline{
 				bat 'mvn test'
 			}
 		}
-		steps('Build'){
+		stage('Build'){
 			steps{
 				bat 'mvn install'
 			}
 		}
-		steps('Deploy'){
+		stage('Deploy'){
 			steps{
 				echo "Deploy into the maven repo"
 			}
