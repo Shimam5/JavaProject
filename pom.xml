@@ -23,8 +23,6 @@
           <target>1.8</target>
         </configuration>
         <groupId>org.apache.maven.plugins</groupId>
-       	
-	      <version>2.19.1</version>
 	      <configuration>
 		    <trimStackTrace>false</trimStackTrace>
     	</configuration>
