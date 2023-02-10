@@ -21,11 +21,10 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+	  <trimStackTrace>false</trimStackTrace>
         </configuration>
         <groupId>org.apache.maven.plugins</groupId>
-	      <configuration>
-		    <trimStackTrace>false</trimStackTrace>
-    	</configuration>
+	  
       </plugin>
     </plugins>
   </build>
